@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fruits Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, user-scalable=yes">
+        <link rel="stylesheet" href="styling.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="score">
+                Score: <span id="score-value">0</span>
+            </div>
+            
+            <div id="lifesLeft">
+
+            </div>
+            
+            <div id="fruitsContainer">
+                <img id="fruit1" class="fruit">
+                <img id="bomb" class="fruit" src="images/bomb.png">
+            </div>
+            
+            <div id="instruction">
+                Catch Fruits & Watch Out Bombs
+            </div>
+            
+            <div id="startreset">
+                Start Game
+            </div>
+            
+            <div id="leaderboards">
+                <p id="highscores">HIGH SCORES</p>
+                <table>
+                    <tr id="row0">
+                        <th>RANK</th>
+                        <th>SCORE</th>
+                        <th>NAME</th>
+                    </tr>
+                    <tr id="row1">
+                        <td>1ST</td>
+                        <td id="row1-score">100</td>
+                        <td id="row1-name">ADM</td>
+                    </tr>
+                    <tr id="row2">
+                        <td>2ND</td>
+                        <td id="row2-score">025</td>
+                        <td id="row2-name">ZOF</td>
+                    </tr>
+                    <tr id="row3">
+                        <td>3RD</td>
+                        <td id="row3-score">015</td>
+                        <td id="row3-name">MCU</td>
+                    </tr>
+                    <tr id="row4">
+                        <td>4TH</td>
+                        <td id="row4-score">013</td>
+                        <td id="row4-name">XXD</td>
+                    </tr>
+                    <tr id="row5">
+                        <td>5TH</td>
+                        <td id="row5-score">002</td>
+                        <td id="row5-name">LOL</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div id="gameover">
+                
+            </div>
+        </div>
+        <audio id="slicesound">
+            <source src="audio/slicefruit.mp3">
+            <source src="audio/slicefruit.ogg">
+        </audio>
+        <audio id="bombsound">
+            <source src="audio/bomb-sound.mp3">
+            <source src="audio/bomb-sound.ogg">
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="code.js"></script>
+    </body>
+</html>
